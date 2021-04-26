@@ -11,6 +11,14 @@ fields:
   label: Title
   config:
     required: true
+- type: tag_list
+  name: categories
+  label: Categories
+- name: download_link
+  type: text
+  config:
+    required: false
+  label: Download link
 - type: datetime
   name: date
   label: Date
@@ -22,9 +30,6 @@ fields:
     display_utc: true
   default: now
   hidden: true
-- type: tag_list
-  name: categories
-  label: Categories
 - type: color
   name: project_bg_color
   config:
