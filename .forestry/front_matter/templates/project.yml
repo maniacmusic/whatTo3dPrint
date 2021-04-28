@@ -14,6 +14,25 @@ fields:
 - type: tag_list
   name: categories
   label: Categories
+- name: source_platform
+  type: select
+  default: []
+  config:
+    required: true
+    options:
+    - PrusaPrinters
+    - Thingiverse
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Source Platform
+- name: source_link
+  type: text
+  config:
+    required: true
+  label: Source Link
 - name: download_link
   type: text
   config:
@@ -40,25 +59,6 @@ fields:
   config:
     color_format: Hex
   label: Foreground color
-- name: source_link
-  type: text
-  config:
-    required: true
-  label: Source Link
-- name: source_platform
-  type: select
-  default: []
-  config:
-    required: true
-    options:
-    - PrusaPrinters
-    - Thingiverse
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Source Platform
 pages:
 - projects/3d-graff.md
 - projects/cellular-lamp.md
