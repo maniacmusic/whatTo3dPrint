@@ -49,21 +49,28 @@ fields:
     display_utc: true
   default: now
   hidden: true
-- type: color
-  name: project_bg_color
-  config:
-    color_format: Hex
-  label: Background color
-- type: color
-  name: project_fg_color
-  config:
-    color_format: Hex
-  label: Foreground color
 - name: author
   type: text
   config:
     required: true
   label: Author
+- name: author_link
+  type: text
+  config:
+    required: false
+  label: Author Link
+- type: color
+  name: project_fg_color
+  config:
+    color_format: Hex
+  label: Foreground color
+  hidden: true
+- type: color
+  name: project_bg_color
+  config:
+    color_format: Hex
+  label: Background color
+  hidden: true
 pages:
 - projects/24-7-lampshade.md
 - projects/cellular-lamp.md
