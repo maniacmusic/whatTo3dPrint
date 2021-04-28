@@ -4,9 +4,7 @@
       <Hero />
       <div class="categories">
         <div class="category"><g-link to="/tools/">Tools</g-link></div>
-        <div class="category"><a href="">Gardening</a></div>
-        <div class="category"><a href="">Lamps</a></div>
-        <div class="category"><a href="">Tools</a></div>
+        <div class="category"><g-link to="/lamps/">Lamps</g-link></div>
       </div>
       <ProjectsGrid :projects="$page.projects.edges" />
     </div>
