@@ -60,7 +60,6 @@ fields:
     color_format: Hex
   label: Foreground color
 pages:
-- projects/3d-graff.md
 - projects/cellular-lamp.md
 - projects/chelsea-landmark.md
 - projects/corner-clamps.md
