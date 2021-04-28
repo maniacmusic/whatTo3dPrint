@@ -2,6 +2,12 @@
   <Layout>
     <div class="container">
       <Hero />
+      <div class="categories">
+        <div class="category"><g-link to="/tools/">Tools</g-link></div>
+        <div class="category"><a href="">Gardening</a></div>
+        <div class="category"><a href="">Lamps</a></div>
+        <div class="category"><a href="">Tools</a></div>
+      </div>
       <ProjectsGrid :projects="$page.projects.edges" />
     </div>
     <LatestJournals :journals="$page.journals.edges" />
@@ -10,7 +16,7 @@
 
 <page-query>
 query Posts {
-	projects: allProjectPost {
+	projects : allProjectPost(filter: { categories: { contains: ["pink"] }}) {
     edges {
       node {
         id
@@ -35,15 +41,15 @@ query Posts {
 </page-query>
 
 <script>
-import Hero from "@/components/Hero"
-import ProjectsGrid from "@/components/ProjectsGrid"
-import LatestJournals from "@/components/LatestJournals"
+import Hero from "@/components/Hero";
+import ProjectsGrid from "@/components/ProjectsGrid";
+import LatestJournals from "@/components/LatestJournals";
 
 export default {
   components: {
     Hero,
     ProjectsGrid,
-    LatestJournals
-  }
-}
+    LatestJournals,
+  },
+};
 </script>

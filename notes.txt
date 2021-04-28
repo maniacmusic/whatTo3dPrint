@@ -1,0 +1,13 @@
+categorys:
+- gardening
+- tools
+- 3D Printer Mods
+- upcycling
+- organisation
+- light / lamps
+ - lampshades
+ - rgb
+- electronics
+- toys / games
+ - boardgames
+ - 
