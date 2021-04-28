@@ -59,6 +59,11 @@ fields:
   config:
     color_format: Hex
   label: Foreground color
+- name: author
+  type: text
+  config:
+    required: true
+  label: Author
 pages:
 - projects/cellular-lamp.md
 - projects/chelsea-landmark.md
