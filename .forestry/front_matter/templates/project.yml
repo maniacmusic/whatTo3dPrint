@@ -65,6 +65,7 @@ fields:
     required: true
   label: Author
 pages:
+- projects/24-7-lampshade.md
 - projects/cellular-lamp.md
 - projects/corner-clamps.md
 - projects/designer-lithophane-moon-lamp.md
