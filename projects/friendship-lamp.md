@@ -6,6 +6,7 @@ title: Friendship Lamp
 categories:
 - lamps
 - home
+- standlamp
 source_link: https://www.prusaprinters.org/prints/64184-friendship-lamp
 download_link: https://media.prusaprinters.org/media/prints/64184/packs/147882_9f12d1e0-f176-424c-8d5d-d1ad9e7170a7/friendship-lamp-model_files.zip#_ga=2.149601842.529317066.1619385758-1521836024.1614377370
 author: " MrHegger"
