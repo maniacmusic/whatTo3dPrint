@@ -3,6 +3,7 @@
     <div class="container">
       <div class="sub-cat">
         <g-link to="/lamps/tablelamps/">Table Lamps</g-link>
+        <g-link to="/lamps/hanginglamps/">Hanging Lamps</g-link>
       </div>
       <ProjectsGrid :projects="$page.projects.edges" />
     </div>

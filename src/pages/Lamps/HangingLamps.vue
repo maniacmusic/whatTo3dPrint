@@ -11,7 +11,7 @@
 
 <page-query>
 query Posts {
-	projects : allProjectPost(filter: { categories: { contains: ["tablelamp"] }}) {
+	projects : allProjectPost(filter: { categories: { contains: ["hanglamp"] }}) {
     edges {
       node {
         id
