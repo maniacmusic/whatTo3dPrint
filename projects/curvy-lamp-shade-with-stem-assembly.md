@@ -6,6 +6,7 @@ title: Curvy Lamp Shade with Stem Assembly
 categories:
 - lamps
 - home
+- standlamp
 source_link: https://www.prusaprinters.org/prints/41234-curvy-lamp-shade-with-stem-assembly
 download_link: https://media.prusaprinters.org/media/prints/41234/packs/85420_a70b82c4-96ee-44a7-81a7-f1d89a2bdf1a/curvy-lamp-shade-with-stem-assembly-print_files.zip#_ga=2.149723698.529317066.1619385758-1521836024.1614377370
 author: Ricky
