@@ -1,6 +1,9 @@
 <template>
   <Layout>
     <div class="container">
+      <div class="sub-cat">
+        <g-link to="/lamps/tablelamps/">Table Lamps</g-link>
+      </div>
       <ProjectsGrid :projects="$page.projects.edges" />
     </div>
   </Layout>
@@ -8,7 +11,7 @@
 
 <page-query>
 query Posts {
-	projects : allProjectPost(filter: { categories: { contains: ["lamps"] }}) {
+	projects : allProjectPost(filter: { categories: { contains: ["tablelamps"] }}) {
     edges {
       node {
         id
