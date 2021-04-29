@@ -6,6 +6,7 @@ title: Pentagon Lamp Shades
 categories:
 - lamps
 - home
+- hanglamp
 source_link: https://www.prusaprinters.org/prints/41647-pentagon-lamp-shades
 download_link: https://media.prusaprinters.org/media/prints/41647/packs/86054_47cdaa93-571c-4738-ad02-4054de5553df/pentagon-lamp-shades-print_files.zip#_ga=2.77182481.529317066.1619385758-1521836024.1614377370
 author: Michal Dvorak
