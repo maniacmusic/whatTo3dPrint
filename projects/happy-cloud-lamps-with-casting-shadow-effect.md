@@ -11,5 +11,6 @@ download_link: https://media.prusaprinters.org/media/prints/39378/packs/81814_f8
 project_bg_color: ''
 project_fg_color: ''
 author: " Nils Kal"
+author_link: https://www.prusaprinters.org/social/35971-nils-kal
 
 ---
