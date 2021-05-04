@@ -1,5 +1,5 @@
 ---
-date: 
+date: 2021-05-03T22:00:00Z
 thumbnail: "/uploads/kawaii2.png"
 title: Kawaii Toothbrush Holder
 categories: []
@@ -10,5 +10,6 @@ source_platform: Prusa Printers
 source_link: https://www.prusaprinters.org/prints/24540-kawaii-toothbrush-holder
 author: " ONE|BY"
 author_link: https://www.prusaprinters.org/social/50212-oneby
+categories2: []
 
 ---
