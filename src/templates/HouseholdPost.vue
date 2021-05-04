@@ -48,6 +48,7 @@ query HouseholdPost ($path: String!) {
     title
     date (format: "YYYY")
     content
+    categories
     download_link
     source_link
     author

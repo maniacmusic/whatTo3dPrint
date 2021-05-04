@@ -7,7 +7,7 @@
 
 <page-query>
 query Posts {
-	projects : allProjectPost(perPage: 400) {
+	projects : allProjectPost(perPage: 15) {
     edges {
       node {
         id

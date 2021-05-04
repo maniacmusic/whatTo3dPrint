@@ -20,6 +20,23 @@
             >
               <ul>
                 <li>
+                  <input
+                    id="search"
+                    v-model="searchTerm"
+                    class="input"
+                    type="text"
+                    placeholder="Search"
+                  />
+                  <g-link
+                    v-for="result in searchResults"
+                    :key="result.id"
+                    :to="result.path"
+                    class="navbar-item"
+                  >
+                    {{ result.title }}
+                  </g-link>
+                </li>
+                <li>
                   <g-link
                     to="/lamps/"
                     class="flex text-2xl items-center px-3 hover:text-gray-900 transition-colors duration-200 mb-2 text-gray-900"
@@ -343,11 +360,23 @@
 <script>
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Search from "gridsome-plugin-flexsearch/SearchMixin";
 
 export default {
+  mixins: [Search],
   components: {
     Header,
     Footer,
+  },
+  data: () => ({
+    searchTerm: "",
+  }),
+  computed: {
+    searchResults() {
+      const searchTerm = this.searchTerm;
+      if (searchTerm.length < 3) return [];
+      return this.$search.search({ query: searchTerm, limit: 5 });
+    },
   },
 };
 </script>

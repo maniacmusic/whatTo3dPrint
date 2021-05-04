@@ -20,6 +20,20 @@ module.exports = {
       }
     },
     {
+      use: 'gridsome-plugin-flexsearch',
+      options: {
+        searchFields: ['title'],
+        collections: [
+          {
+            typeName: 'ProjectPost',
+            indexName: 'ProjectPost',
+            fields: ['title', 'categories']
+          }
+        ]
+      }
+    },
+
+    {
       use: "@gridsome/source-filesystem",
       options: {
         path: "projects/**/*.md",
