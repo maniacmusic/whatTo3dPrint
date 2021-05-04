@@ -14,7 +14,7 @@ fields:
 - name: categories2
   type: tag_list
   default: []
-  label: categories2
+  label: categories
 - type: text
   name: download_link
   label: download_link
@@ -38,5 +38,3 @@ fields:
 - type: text
   name: author_link
   label: author_link
-pages:
-- household/bathroom/kawaii-toothbrush-holder.md
