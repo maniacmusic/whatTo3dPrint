@@ -11,6 +11,8 @@ sections:
   label: Sidebar
   create: documents
   match: "**/*.md"
+  templates:
+  - sidebar
 - type: document
   path: data/theme.json
   label: Theme config
