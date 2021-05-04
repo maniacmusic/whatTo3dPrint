@@ -1,7 +1,7 @@
 ---
 source_platform: PrusaPrinters
 date: 2021-05-04
-thumbnail: ''
+thumbnail: "/uploads/p1344768-1.png"
 title: Hangable lamp shade
 categories:
 - home
