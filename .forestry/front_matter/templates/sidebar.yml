@@ -1,4 +1,25 @@
 ---
 label: Sidebar
 hide_body: true
-fields: []
+fields:
+- name: svg
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: SVG
+- name: sortable
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: sortable
+- name: link
+  type: text
+  config:
+    required: false
+  label: Link
