@@ -1,5 +1,6 @@
 <template>
   <Layout>
+    <SubcatLights />
     <ProjectsGrid :projects="$page.projects.edges" />
   </Layout>
 </template>
@@ -23,10 +24,12 @@ query Posts {
 
 <script>
 import ProjectsGrid from "@/components/ProjectsGrid";
+import SubcatLights from "@/components/SubcatLights";
 
 export default {
   components: {
     ProjectsGrid,
+    SubcatLights,
   },
 };
 </script>
