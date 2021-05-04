@@ -1,0 +1,37 @@
+---
+label: Gardening
+hide_body: true
+fields:
+- type: datetime
+  name: date
+  label: date
+- type: file
+  name: thumbnail
+  label: thumbnail
+- type: text
+  name: title
+  label: title
+- type: list
+  name: categories
+  label: categories
+- type: text
+  name: download_link
+  label: download_link
+- type: text
+  name: project_bg_color
+  label: project_bg_color
+- type: text
+  name: project_fg_color
+  label: project_fg_color
+- type: text
+  name: source_platform
+  label: source_platform
+- type: text
+  name: source_link
+  label: source_link
+- type: text
+  name: author
+  label: author
+- type: text
+  name: author_link
+  label: author_link
