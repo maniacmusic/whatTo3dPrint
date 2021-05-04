@@ -73,6 +73,7 @@ fields:
   label: Background color
   hidden: true
 pages:
+- projects/Lamps/foliage-14-40.md
 - projects/Lamps/gyroid-lampshade-1.md
 - projects/Lamps/hangable-lamp-shade.md
 - projects/Lamps/icosahedron-lamp-voronoi-pattern.md
