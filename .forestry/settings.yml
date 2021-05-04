@@ -6,6 +6,11 @@ webhook_url:
 sections:
 - type: heading
   label: Settings
+- type: directory
+  path: sidebar
+  label: Sidebar
+  create: documents
+  match: "**/*.md"
 - type: document
   path: data/theme.json
   label: Theme config
