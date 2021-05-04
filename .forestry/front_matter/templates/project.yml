@@ -1,6 +1,7 @@
 ---
 label: Project
 hide_body: false
+display_field: author
 fields:
 - type: file
   name: thumbnail
