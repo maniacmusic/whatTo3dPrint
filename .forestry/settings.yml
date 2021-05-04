@@ -5,6 +5,11 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: heading
+  label: Settings
+- type: document
+  path: data/theme.json
+  label: Theme config
+- type: heading
   label: Categorys
 - type: directory
   path: projects
@@ -20,9 +25,6 @@ sections:
   match: "**/*.md"
   templates:
   - journal
-- type: document
-  path: data/theme.json
-  label: Theme config
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
