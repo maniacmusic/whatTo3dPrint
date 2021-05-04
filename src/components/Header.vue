@@ -1,83 +1,52 @@
 <template>
-    <header class="header" :class="{sticky: $route.path === '/' || $route.path.includes('/projects/')}">
-        <div class="container">
-            <div class="left">
-                <g-link :to="{ name: 'home' }" class="home-link">
-                    <img 
-                        src="../../static/logo.svg"
-                        :alt="settings.site_name" 
-                        class="logo"
-                    />
-                </g-link>
-            </div>
-            <nav class="nav right">
-                <g-link class="nav__link" to="/journal">Journal</g-link>
-                <g-link class="nav__link" to="/contact">Say Hi!</g-link>
-            </nav>
-        </div>
-    </header>
+  <header
+    class="header sticky bg-white my-5 ml-2"
+    :class="{
+      sticky: $route.path === '/' || $route.path.includes('/projects/'),
+    }"
+  >
+    <div class="container">
+      <div class="left">
+        <g-link :to="{ name: 'home' }" class="home-link text-3xl m-2">
+          <svg
+            id="_x31_px"
+            enable-background="new 0 0 24 24"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-10 w-10 inline"
+          >
+            <path
+              d="m23.5 1h-23c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h23c.276 0 .5.224.5.5s-.224.5-.5.5z"
+            />
+            <path
+              d="m15.559 4h-7.118c-1.077 0-2.03-.687-2.371-1.709l-.544-1.633c-.088-.262.054-.545.316-.632.263-.088.545.054.632.316l.544 1.632c.205.614.777 1.026 1.423 1.026h7.117c.646 0 1.218-.412 1.423-1.026l.544-1.632c.087-.262.369-.404.632-.316.262.087.403.37.316.632l-.543 1.633c-.341 1.022-1.294 1.709-2.371 1.709z"
+            />
+            <path
+              d="m12.5 7h-1c-.215 0-.406-.138-.474-.342l-1-3c-.087-.262.054-.545.316-.632.264-.087.545.054.632.316l.886 2.658h.279l.886-2.658c.087-.262.368-.403.632-.316.262.087.403.37.316.632l-1 3c-.067.204-.258.342-.473.342z"
+            />
+            <path
+              d="m12 14c-.053 0-.107-.009-.158-.026l-7.5-2.5c-.204-.068-.342-.259-.342-.474s.138-.406.342-.474l7.5-2.5c.103-.034.214-.034.316 0l7.5 2.5c.204.068.342.259.342.474s-.138.406-.342.474l-7.5 2.5c-.051.017-.105.026-.158.026zm-5.919-3 5.919 1.973 5.919-1.973-5.919-1.973z"
+            />
+            <path
+              d="m12 24c-.053 0-.107-.009-.158-.026l-7.5-2.5c-.204-.068-.342-.259-.342-.474v-10c0-.276.224-.5.5-.5s.5.224.5.5v9.64l7 2.333 7-2.333v-9.64c0-.276.224-.5.5-.5s.5.224.5.5v10c0 .215-.138.406-.342.474l-7.5 2.5c-.051.017-.105.026-.158.026z"
+            />
+            <path
+              d="m12 24c-.276 0-.5-.224-.5-.5v-10c0-.276.224-.5.5-.5s.5.224.5.5v10c0 .276-.224.5-.5.5z"
+            />
+          </svg>
+          WHAT TO 3D PRINT?
+        </g-link>
+      </div>
+    </div>
+  </header>
 </template>
 
 <script>
 export default {
   data() {
     return {
-        logo: require("../../static/logo.svg"),
-        settings: require("../../data/theme.json")
-    }
-  }
-}
+      settings: require("../../data/theme.json"),
+    };
+  },
+};
 </script>
-
-<style scoped>
-.header {
-    position: relative;
-    height: 6rem;
-    z-index: 10;
-}
-.header.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-.header > .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-}
-.home-link {
-    text-decoration: none;
-}
-.logo {
-    height: 1.5rem;
-}
-.site-name {
-    font-size: 0.9rem;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    text-decoration: none;
-    text-transform: uppercase;   
-}
-.nav > * {
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-decoration: none;
-    margin-top: 4px;
-    margin-right: 3rem;
-    padding-bottom: 4px;
-    border-bottom: 1px solid;
-    border-color: transparent;
-    transition: border 0.15s;
-}
-.nav > *:last-of-type {
-    margin: 0;
-}
-.nav > *:hover {
-    border-color: inherit;
-}
-.nav > .active {
-    border-color: inherit;
-}
-</style>

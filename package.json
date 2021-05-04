@@ -12,5 +12,12 @@
     "@gridsome/transformer-remark": "^0.6.4",
     "gridsome": "^0.7.23",
     "gridsome-plugin-flexsearch": "^1.1.0"
+  },
+  "devDependencies": {
+    "gridsome-plugin-tailwindcss": "^4.1.1",
+    "postcss": "^8.2.13",
+    "postcss-import": "^13.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^2.1.2"
   }
 }

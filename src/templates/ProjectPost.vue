@@ -3,7 +3,15 @@
     <div class="project">
       <div class="container">
         <div class="project-header">
-          <h1 class="project-title" v-html="$page.post.title" />
+          <h1 class="text-3xl" v-html="$page.post.title" />
+
+          <a
+            :href="$page.post.download_link"
+            target="_blank"
+            class="text-2xl rounded-lg border-2 border-black p-5 mt-8 mx-2"
+            >Download</a
+          >
+
           <div class="project-info">
             <g-image
               :src="$page.post.thumbnail"
@@ -28,7 +36,6 @@
             </div>
           </div>
         </div>
-
         <div v-html="$page.post.content" class="content" />
       </div>
     </div>
@@ -42,6 +49,10 @@ query ProjectPost ($path: String!) {
     date (format: "YYYY")
     content
     categories
+    download_link
+    source_link
+    author
+    author_link
     project_bg_color
     project_fg_color
     thumbnail (quality: 90)
@@ -70,30 +81,3 @@ export default {
 };
 </script>
 
-<style scoped>
-.project-header {
-  padding: 20vh 0 4rem 0;
-}
-.project-title {
-  font-size: 4rem;
-  margin: 0 0 4rem 0;
-  padding: 0;
-}
-.project-info {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 0.8rem;
-}
-.project-info > div {
-  margin-right: 4rem;
-}
-.project-info > div:last-of-type {
-  margin: 0;
-}
-.category:after {
-  content: ", ";
-}
-.category:last-of-type:after {
-  content: "";
-}
-</style>

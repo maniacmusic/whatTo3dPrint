@@ -1,24 +1,19 @@
 <template>
   <Layout>
-    <div class="container">
-      <div class="sub-cat">
-        <g-link to="/lamps/tablelamps/">Table Lamps</g-link>
-      </div>
-      <ProjectsGrid :projects="$page.projects.edges" />
-    </div>
+    <ProjectsGrid :projects="$page.projects.edges" />
   </Layout>
 </template>
 
 <page-query>
 query Posts {
-	projects : allProjectPost(filter: { categories: { contains: ["tablelamp"] }}) {
+	projects : allProjectPost(filter: { categories: { contains: ["standlamp"] }}) {
     edges {
       node {
         id
         date (format: "YYYY")
         title
         categories
-        thumbnail (quality: 90)
+        thumbnail (width: 350, height: 350, quality: 75)
         path
       }
     }

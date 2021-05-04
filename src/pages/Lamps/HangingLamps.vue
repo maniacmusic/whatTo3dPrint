@@ -1,11 +1,6 @@
 <template>
   <Layout>
-    <div class="container">
-      <div class="sub-cat">
-        <g-link to="/lamps/tablelamps/">Table Lamps</g-link>
-      </div>
-      <ProjectsGrid :projects="$page.projects.edges" />
-    </div>
+    <ProjectsGrid :projects="$page.projects.edges" />
   </Layout>
 </template>
 
@@ -18,7 +13,7 @@ query Posts {
         date (format: "YYYY")
         title
         categories
-        thumbnail (quality: 90)
+        thumbnail (width: 350, height: 350, quality: 90)
         path
       }
     }

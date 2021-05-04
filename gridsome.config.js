@@ -9,6 +9,17 @@ module.exports = {
   siteDescription: "Creative technologist",
   plugins: [
     {
+      use: "gridsome-plugin-tailwindcss",
+
+      // these options are optional, as they are copies of the default values...
+      options: {
+        tailwindConfig: './tailwind.config.js',
+        presetEnvConfig: {},
+        shouldImport: false,
+        shouldTimeTravel: false
+      }
+    },
+    {
       use: "@gridsome/source-filesystem",
       options: {
         path: "projects/**/*.md",
