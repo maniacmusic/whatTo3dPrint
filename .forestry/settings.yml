@@ -19,6 +19,13 @@ sections:
 - type: heading
   label: Categorys
 - type: directory
+  path: household
+  label: Household
+  create: all
+  match: "**/*.md"
+  templates:
+  - household
+- type: directory
   path: projects
   label: Prints
   create: all
