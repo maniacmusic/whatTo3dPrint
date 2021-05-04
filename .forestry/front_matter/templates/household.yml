@@ -11,18 +11,21 @@ fields:
 - type: text
   name: title
   label: title
-- type: list
-  name: categories
-  label: categories
+- name: categories2
+  type: tag_list
+  default: []
+  label: categories2
 - type: text
   name: download_link
   label: download_link
 - type: text
   name: project_bg_color
   label: project_bg_color
+  hidden: true
 - type: text
   name: project_fg_color
   label: project_fg_color
+  hidden: true
 - type: text
   name: source_platform
   label: source_platform
