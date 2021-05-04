@@ -449,7 +449,6 @@ export default {
   font-weight: bold;
 }
 #content-wrapper {
-  margin-top: 25px;
   font-size: 21px;
   text-align: center;
   animation: fadein 0.3s;
