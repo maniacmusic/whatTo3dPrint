@@ -23,3 +23,5 @@ fields:
   config:
     required: false
   label: Link
+pages:
+- sidebar/hanging-lamps.md
