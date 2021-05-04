@@ -1,7 +1,7 @@
 ---
 source_platform: PrusaPrinters
 date: 2021-05-04
-thumbnail: ''
+thumbnail: "/uploads/1-1.jpg"
 title: '"temple of venus" desktop and pendant lamp'
 categories:
 - home
