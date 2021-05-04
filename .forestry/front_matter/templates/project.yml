@@ -72,3 +72,5 @@ fields:
     color_format: Hex
   label: Background color
   hidden: true
+pages:
+- projects/Lamps/night-desk-lamp-peace-relax.md
